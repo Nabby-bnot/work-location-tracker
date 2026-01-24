@@ -18,6 +18,22 @@ The project is built incrementally, starting with a backend-first approach.
 
 ---
 
+## How We Use This in Our Team
+
+In our team, we use **Work Location Tracker** as part of our daily Scrum routine.
+
+During the daily Scrum meeting:
+- We maintain a dummy work item dedicated to updating work location data
+- This item is time-boxed to approximately 1 minute
+- We treat it like any other regular work item
+- Team members update their work location information
+- Once updated, we move on to discuss the next work item
+
+This approach keeps work location data up to date without adding extra meetings or overhead, and it naturally fits into our existing Scrum workflow.
+This is just one way to use the tool. Teams are encouraged to adapt it to their own workflows.
+
+---
+
 ## Project Structure
 
 work-location-tracker/
