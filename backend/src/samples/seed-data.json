@@ -1,22 +1,38 @@
-[
-  {
-    "workDate": "2026-01-20",
-    "location": "WFO"
-  },
-  {
-    "workDate": "2026-01-21",
-    "location": "WFH"
-  },
-  {
-    "workDate": "2026-01-22",
-    "location": "WFO"
-  },
-  {
-    "workDate": "2026-01-23",
-    "location": "WFH"
-  },
-  {
-    "workDate": "2026-01-24",
-    "location": "WFO"
-  }
-]
+{
+  "users": [
+    {
+      "email": "employee1@wlt.dev",
+      "role": "EMPLOYEE"
+    },
+    {
+      "email": "employee2@wlt.dev",
+      "role": "EMPLOYEE"
+    },
+    {
+      "email": "manager@wlt.dev",
+      "role": "MANAGER"
+    }
+  ],
+  "workLocations": [
+    {
+      "email": "employee1@wlt.dev",
+      "entries": [
+        { "workDate": "2026-01-20", "location": "WFO" },
+        { "workDate": "2026-01-21", "location": "WFH" },
+        { "workDate": "2026-01-22", "location": "WFO" },
+        { "workDate": "2026-01-23", "location": "LEAVE" },
+        { "workDate": "2026-01-24", "location": "WFO" }
+      ]
+    },
+    {
+      "email": "employee2@wlt.dev",
+      "entries": [
+        { "workDate": "2026-01-20", "location": "WFH" },
+        { "workDate": "2026-01-21", "location": "WFH" },
+        { "workDate": "2026-01-22", "location": "LEAVE" },
+        { "workDate": "2026-01-23", "location": "HOLIDAY" },
+        { "workDate": "2026-01-24", "location": "WFO" }
+      ]
+    }
+  ]
+}

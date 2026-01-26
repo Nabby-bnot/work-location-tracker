@@ -5,12 +5,14 @@ import {
   getWorkLocations,
   updateWorkLocation,
 } from "../controllers/workLocations.controller.js";
+import { requireAuth } from "../middleware/requireAuth.js";
 
 const router = express.Router();
 
-router.get("/", getWorkLocations);
-router.post("/", createWorkLocation);
-router.put("/:id", updateWorkLocation);
-router.delete("/:id", deleteWorkLocation);
+router.use(requireAuth);
+
+router.route("/").get(getWorkLocations).post(createWorkLocation);
+
+router.route("/:id").put(updateWorkLocation).delete(deleteWorkLocation);
 
 export default router;
