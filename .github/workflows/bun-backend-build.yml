@@ -30,7 +30,7 @@ jobs:
           echo "JWT_EXPIRES_IN=1h" >> .env
 
       - name: Build backend
-        run: cd backend && bun build app.js --outfile dist/app.js --platform node
+        run: cd backend && bun build
   
       - name: Publish artifacts
         uses: actions/upload-artifact@v4
